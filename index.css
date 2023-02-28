@@ -2,4 +2,35 @@
   width: 100vw;
   height: 100vh;
   background: pink;
+  display: flex;
+  justify-content: center;
+}
+
+.knife {
+  border: 3px solid black;
+  width: 60%;
+  padding: 2rem;
+  background-color: azure;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  border-bottom: 1px solid black;
+  margin-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+.carrot > p {
+  width: 400px;
+  height: 1rem;
+  background-color: gainsboro;
+  overflow: scroll;
+}
+
+.copy-point {
+  width: 40px;
+  height: 40px;
+  background-color: blueviolet;
+  margin-right: 1rem;
 }
