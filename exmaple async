@@ -1,0 +1,8 @@
+async function fetchMoviesJSON() {
+  const response = await fetch("./src/test.json");
+  const movies = await response.json();
+  return movies;
+}
+fetchMoviesJSON().then((movies) => {
+  console.log(movies);
+});

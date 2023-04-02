@@ -22,7 +22,7 @@
   padding-bottom: 0.5rem;
 }
 .carrot > p {
-  width: 400px;
+  /* width: 400px; */
   height: 1rem;
   background-color: gainsboro;
   overflow: scroll;
