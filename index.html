@@ -103,8 +103,9 @@ mkdir src dist scss modules images
                     <path
                       d="M1.232,55.541c-1.533-1.388-1.652-3.756-0.265-5.289c1.388-1.534,3.756-1.652,5.29-0.265l34.053,30.878l76.099-79.699 c1.429-1.501,3.804-1.561,5.305-0.132c1.502,1.428,1.561,3.803,0.133,5.305L43.223,88.683l-0.005-0.005 c-1.396,1.468-3.716,1.563-5.227,0.196L1.232,55.541L1.232,55.541z"
                     />
-                  </g></svg
-                >"); } html { font-size: 16px; } #launch { position: absolute;
+                  </g>
+                </svg>
+                "); } html { font-size: 16px; } #launch { position: absolute;
                 top: 0; z-index: 90; left: 50vw; width: 100px; height: 20px; }
                 .site--padding { background-color: var(--color-back); width:
                 100vw; display: flex; flex-direction: column; align-items:
@@ -186,7 +187,13 @@ mkdir src dist scss modules images
             <div class="copy-point"></div>
           </div>
           <div class="line">
-            <div class="carrot"></div>
+            <div class="carrot">
+              <p>
+                @for $i from 1 through 10 { &:nth-child(#{$i}) { transition:
+                transform 1s cubic-bezier(0.21, 1.05, 0.07, 1.17) (0.5s + (0.2 *
+                $i)); } }
+              </p>
+            </div>
             <div class="copy-point"></div>
           </div>
         </section>
