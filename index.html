@@ -16,7 +16,7 @@
           <div class="line">
             <div class="carrot">
               <textarea>
-mkdir src dist scss modules images 
+mkdir src scss modules images 
               </textarea>
             </div>
             <div class="copy-point"></div>
@@ -37,7 +37,12 @@ mkdir src dist scss modules images
           </div>
 
           <div class="line">
-            <div class="carrot"></div>
+            <div class="carrot">
+              <p>
+                , "scripts": { "build": "esbuild index.js --bundle --minify
+                --outfile=bundle.js", "watch": "watch 'npm run build' ./" }
+              </p>
+            </div>
             <div class="copy-point"></div>
           </div>
         </section>
