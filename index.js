@@ -31,7 +31,7 @@ window.onload = (e) => {
     document.getElementById("modal-1").classList.remove("hidden");
   }
 
-  document.getElementById("no").addEventListener("click", (e) => {
+  document.querySelector(".js-close-modal").addEventListener("click", (e) => {
     document.getElementById("modal-1").classList.add("hidden");
   });
   document.getElementById("yes").addEventListener("click", (e) => {
