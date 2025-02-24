@@ -31,16 +31,18 @@ window.onload = (e) => {
     document.getElementById("modal-1").classList.remove("hidden");
   }
 
-  document.getElementById("yes").addEventListener("click", (e) => {
+  document.getElementById("no").addEventListener("click", (e) => {
     document.getElementById("modal-1").classList.add("hidden");
   });
-  document.getElementById("no").addEventListener("click", (e) => {
+  document.getElementById("yes").addEventListener("click", (e) => {
     window.open("https://app.invoicing.co/#/invoices", "_blank");
 
     window.open(
       "https://pcgus.my.workfront.com/team/64010c2a000400c0ea326b63c22878f5/schedule",
       "_blank"
     );
+
+    window.open("https://teams.microsoft.com/v2/", "_blank");
   });
 
   // document.getElementById("no").classList.remove("hidden");
